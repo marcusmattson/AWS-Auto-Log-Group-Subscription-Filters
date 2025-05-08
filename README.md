@@ -189,7 +189,7 @@ aws events put-targets \
   --rule DailyLogGroupSubscriptionCheck \
   --targets "Id"="1","Arn"="arn:aws:lambda:REGION:ACCOUNT_ID:function:LogGroupSubscriptionFilters"
 ```
-**Note:** Replace REGION and ACCOUNT_ID with your AWS region and account ID
+**Note:** Replace ```REGION``` and ```ACCOUNT_ID``` with your AWS region and account ID
 
 ### 6. Moving to Production
 When you're ready to move to production, update the Lambda environment variables to turn off dry run mode:
