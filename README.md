@@ -85,7 +85,8 @@ aws iam put-role-policy \
             "Action": [
                 "logs:CreateLogGroup",
                 "logs:CreateLogStream",
-                "logs:PutLogEvents"
+                "logs:PutLogEvents",
+                "logs:PutRetentionPolicy"
             ],
             "Resource": "arn:aws:logs:*:*:*"
         },
