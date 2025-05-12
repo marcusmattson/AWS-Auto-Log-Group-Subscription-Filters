@@ -146,6 +146,7 @@ aws lambda create-function \
 aws lambda invoke \
   --function-name LogGroupSubscriptionFilters \
   --payload '{"test":"true"}' \
+  --cli-binary-format raw-in-base64-out \
   response.json
 ```
 View the response
